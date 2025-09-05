@@ -17,8 +17,16 @@ function mostrarFechaActual(){
 showYear();
 mostrarFechaActual();
 // VARIABLES GLOBALES
-let num1 = +prompt('Ingrese el número 1');
-let num2 = parseInt( prompt('Ingrese el número 2') );
+let num1 = 0;
+let num2 = 0;
+
+function ingresarN1(){
+    num1 = +prompt('Ingrese el número 1');
+}
+
+function ingresarN2(){
+    num1 = +prompt('Ingrese el número 1');
+}
 
 function sumar (n1, n2) {
     let suma = n1 + n2;
@@ -44,12 +52,47 @@ const dividir = (n1, n2) => {
     return n1 / n2;
 }
 
-const resultadoSuma = sumar(num1, num2);
-const resultadoResta = restar(num1, num2);
-console.log(resultadoSuma, resultadoResta);
+// Mucho lio 😥
+let alumno1 = 'José';
+let alumno2 = 'Sofia';
+let alumno3 = 'Carlos';
+let alumno4 = 'Ezequiel';
+let alumno5 = 'Jonathan';
+
+// Mejor así 😁   0      1          2          3         4
+let alumnos = ['José', 'Sofia', 'Jonathan', 'Evelyn', 'Carlos'];
+console.log( alumnos[4] );
+
+alumnos[4] = 'Carlitos';
+console.log( alumnos[4] );
+
+console.log( alumnos[3] );
+
+console.log('La cantidad de elementos son ',  alumnos.length );
+alumnos[5] = 'Selena';
+alumnos[ alumnos.length ] = 'Marcelo';
 
 
+let cursos = [
+    ['José', 'Sofia', 'Jonathan', 'Evelyn', 'Carlos'],
+    ['Zoe', 'Juan', 'Ema', 'Lucas'],
+    ['Sebastian', 'Julieta', 'Fernando', 'Lucas']
+]
 
+console.log('Lista de alumnos'.toUpperCase());
+// Esto no, por favor 😪
+console.log(  alumnos[0] );
+console.log(  alumnos[1] );
+console.log(  alumnos[2] );
+console.log(  alumnos[3] );
+
+alumnos[5] = 'Walter';
+alumnos[7] = 'Pepe';
+alumnos.push('Matias');
+// Ahora con un bucle
+for (let i = 0; i < alumnos.length; i++) {
+    console.log(  alumnos[i] );
+}
 
 
 
