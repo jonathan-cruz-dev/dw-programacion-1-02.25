@@ -62,4 +62,16 @@ console.log( 'la posición es ', index)
 const encontrado = alumnos.find( item => item == 'Carlos' );
 console.log(encontrado)
 
-const dias = ['Lunes', 'Martes', 'Miercoles'];
+const dias = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sabado'];
+
+const frutas = ['🍐', '🍌', '🍊', '🍎', '🍌'];
+const nombres = ['Zoe', 'Luz', 'Mateo', 'Romina', 'Marcos', 'Matias'];
+const notas = [ 7, 8, 6, 2, 8, 10];
+
+// Funcion de orden superior: filter
+const filtrados = frutas.filter( item => item == '🍌' );
+console.log(filtrados)
+const promocionados = notas.filter( item => item >= 7);
+console.log(promocionados)
+const selec = nombres.filter( item => item.length <= 3);
+console.log(selec)
