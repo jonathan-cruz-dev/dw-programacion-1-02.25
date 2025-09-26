@@ -1,20 +1,19 @@
-# Ejercicio Integrador
-1. Crear dos botones en el HTML Buscar y Agregar
-2. Definir un arra carrito = []
-3. Definir dos fuciones buscar() y agregar();
-4. Víncular la botones con su función
+# Ejercicio de Objetos simples
 
-``` javascript
-const agregar = () => {
-    // Solicicitar el usuario el nombre y lo agrgar en el carrito
-}
-```
+1. Creación  de Objeto
+Crea un objeto libro con las propiedades:
+    - titulo (string)
+    - autor (string)
+    - publicado  (number)
 
-``` javascript
-const buscar = () => {
-    // Solicita el usuario el nombre del producto y los busca en el array del carrito, si lo encutra lo muestra por consola y si no muestra un mensaje de error por consolar
-}
-```
 
-5. Verificar que al agregar el mismo producto, nos ser repita
-6. Agregar función elemimiar producto
+2. Acceso a propiedades
+    - Mostrar el título usando notación punto.
+    - Mostrar el autor usando notación corchetes.
+
+3. Agregar y eliminar
+    - Agregar una propiedad editorial.
+    - Eliminar la propiedad publicado.
+    - Mostrar todas las propiedades por consola.
+
+
