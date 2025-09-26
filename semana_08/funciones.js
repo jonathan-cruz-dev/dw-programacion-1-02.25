@@ -52,18 +52,24 @@ console.log(encotrados)
 const curso = {
     // clave : valor
     materia: 'Programación I',
-    profesor: 'Jonathan',
-    alumnos: ['Ezequiel', 'FRANCO', 'JOAQUIN', 'GUILLERMO', 'MILAGROS', 'SOFIA', 'SELENA' ],
+    profesor: {
+        nombre:'Jonathan',
+        email: 'jonthan.cruz.isec@gmail.com'
+    },
+    alumnos: ['EZEQUIEL', 'FRANCO', 'JOAQUIN', 'GUILLERMO', 'MILAGROS', 'SOFIA', 'SELENA' ],
     aula: 41
 }
 const persona = {
     "nombre": "Lucas"
 }
-
 // Acceder a datos, con notación punto y notaciór corchetes
 console.log( curso.materia );
 console.log( curso.profesor);
 console.log( curso['aula']);
-
-console.log(curso);
-console.table(persona);
+console.log(curso.profesor.email);
+console.log(curso.alumnos[2]);
+// Agregar una propiedad
+curso.turno = 'Mañana';
+// para eliminar 
+delete curso.profesor;
+console.log(curso)
