@@ -57,7 +57,15 @@ const curso = {
         email: 'jonthan.cruz.isec@gmail.com'
     },
     alumnos: ['EZEQUIEL', 'FRANCO', 'JOAQUIN', 'GUILLERMO', 'MILAGROS', 'SOFIA', 'SELENA' ],
-    aula: 41
+    aula: 41,
+    // Métodos
+    iniciar: function() {
+        alert('Iniciando Curso');
+    },
+    inscribir: function(){
+        let estudiante = prompt('Ingrese el nombre del estudiate');
+        this.alumnos.push( estudiante );
+    }
 }
 const persona = {
     "nombre": "Lucas"
@@ -73,3 +81,4 @@ curso.turno = 'Mañana';
 // para eliminar 
 delete curso.profesor;
 console.log(curso)
+curso.alumnos.push('JOSÉ')
